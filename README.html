@@ -1,1 +1,80 @@
 # 25LAGCC
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaGuardia Connect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #ba0c2f; /* LaGuardia Red */
+            margin-bottom: 40px;
+        }
+
+        .selection-container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .role-card {
+            background-color: white;
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .role-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .role-card h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .login-button {
+            background-color: #ba0c2f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .login-button:hover {
+            background-color: #a00929;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to LaGuardia Connect</h1>
+    <div class="selection-container">
+        <div class="role-card">
+            <h2>Alumni</h2>
+            <a href="alumni-login.html" class="login-button">Continue</a>
+        </div>
+        <div class="role-card">
+            <h2>Student</h2>
+            <a href="student-login.html" class="login-button">Continue</a>
+        </div>
+    </div>
+
+</body>
+</html>
